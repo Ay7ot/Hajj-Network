@@ -1,10 +1,17 @@
+import { Routes, Route } from "react-router-dom"
+import HomePage from "./Pages/HomePage"
+import { GeneralAppProvider } from "./Contexts/GeneralAppContext"
 
 function App() {
 
   return (
-    <div className='bg-blue-300 min-h-screen'>
-     
-    </div>
+    <GeneralAppProvider>
+      <div>
+        <Routes>
+          <Route path="/" element={<HomePage />}/>
+        </Routes>
+      </div>
+    </GeneralAppProvider>
   )
 }
 

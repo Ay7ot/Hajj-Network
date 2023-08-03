@@ -4,3 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-hajj-black {
+    background-color: rgb(13 13 14);
+}
+
+.border-haj-border {
+    border-color: #ffffff3d;
+}
